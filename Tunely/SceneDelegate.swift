@@ -17,6 +17,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+            // Needed to load tracks on application launch. Calls API to parse and populate data
+            if
+                let tabBarController = window?.rootViewController as? UITabBarController,
+                let navigationController = tabBarController.viewControllers?.first as? UINavigationController,
+                let songsViewController = navigationController.viewControllers.first as? TrackViewController,
+                let albumsViewController = tabBarController.viewControllers?.last as? AlbumViewController
+            {
+                WebServices.loadTracks { (tracks, error) in
+                    guard error == nil else {
+                        print("error loading tracks")
+                        return
+                    }
+                    
+                    /// NOTE: Cannot reload data on collectionView/tableview property here bc they have not been loaded into memory
+                    if let tracks = tracks {
+                        songsViewController.tracks = tracks
+                        albumsViewController.tracks = Track.unqiueAlbums(from: tracks)
+                    }
+                }
+            }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
