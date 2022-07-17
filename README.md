@@ -18,7 +18,7 @@ Student can replace the term with their favorite artist like this
 - MVC (Model View Controller)
 
 ## Potholes to beware (for tech writers)
-1. 
+1. If the json a student uses does not have a `collectionId` for every object in `results`, the parse will fail. This happens if a request uses a limit higher than the number of songs a artist has.
 
 ## Strech goals for students
 - Album detail view when tapping a album cell. Currently, there is no action when tapping a cell since there is only a track detail view.
