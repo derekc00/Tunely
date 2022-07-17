@@ -1,5 +1,3 @@
-
-
 ## Tunely
 Use the [iTunes Api](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/Searching.html#//apple_ref/doc/uid/TP40017632-CH5-SW1) to receive tracks (songs) and albums to display in a list and grid layout
 
@@ -10,6 +8,9 @@ Example request to receive 200 tracks by Jack Johnson
 Student can replace the term with their favorite artist like this
 
 `https://itunes.apple.com/search?term=doja_cat&country=US&media=music&limit=200`
+
+![current state](https://user-images.githubusercontent.com/43795676/179388837-317aae47-3e15-49c6-9f7a-7239fa6d59e2.gif)
+
 
 ## Todo
 
