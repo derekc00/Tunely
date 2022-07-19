@@ -41,7 +41,7 @@
 		65D70BCC288088CA0085EAE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		65D70BD3288088CA0085EAE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65D70BD6288088CA0085EAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		65D70BD8288088CA0085EAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D70BD8288088CA0085EAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		65D70BDF2880890E0085EAE9 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		65D70BE02880890E0085EAE9 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		65D70BE22880890E0085EAE9 /* TrackDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackDetailViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		65D70BE82880890E0085EAE9 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		65D70BE92880890E0085EAE9 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		65D70BF4288089260085EAE9 /* jack_johnson_200.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jack_johnson_200.json; sourceTree = "<group>"; };
-		65D70BF6288089440085EAE9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		65D70BF6288089440085EAE9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,15 +86,12 @@
 		65D70BC9288088CA0085EAE9 /* Tunely */ = {
 			isa = PBXGroup;
 			children = (
+				65D70BCA288088CA0085EAE9 /* AppDelegate.swift */,
+				65D70BCC288088CA0085EAE9 /* SceneDelegate.swift */,
 				65D70BF32880891C0085EAE9 /* Resources */,
 				65D70BE52880890E0085EAE9 /* Models */,
 				65D70BDE2880890E0085EAE9 /* Views */,
 				65D70BE12880890E0085EAE9 /* Controllers */,
-				65D70BCA288088CA0085EAE9 /* AppDelegate.swift */,
-				65D70BCC288088CA0085EAE9 /* SceneDelegate.swift */,
-				65D70BF6288089440085EAE9 /* Main.storyboard */,
-				65D70BD5288088CA0085EAE9 /* LaunchScreen.storyboard */,
-				65D70BD8288088CA0085EAE9 /* Info.plist */,
 			);
 			path = Tunely;
 			sourceTree = "<group>";
@@ -132,15 +129,26 @@
 		65D70BF32880891C0085EAE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65E878E1288693EC00BFCE54 /* ITunes API Responses */,
+				65D70BF6288089440085EAE9 /* Main.storyboard */,
+				65D70BD5288088CA0085EAE9 /* LaunchScreen.storyboard */,
+				65D70BD8288088CA0085EAE9 /* Info.plist */,
+				65D70BD3288088CA0085EAE9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		65E878E1288693EC00BFCE54 /* ITunes API Responses */ = {
+			isa = PBXGroup;
+			children = (
 				65D70BF4288089260085EAE9 /* jack_johnson_200.json */,
 				659767CE2883EEE400CD8285 /* doja_cat_100.json */,
 				659767D12883EFD200CD8285 /* amine_100.json */,
 				659767D22883EFD200CD8285 /* bts_100.json */,
 				659767D02883EFD200CD8285 /* childish_gambino_50.json */,
 				659767D32883EFD200CD8285 /* joji_100.json */,
-				65D70BD3288088CA0085EAE9 /* Assets.xcassets */,
 			);
-			path = Resources;
+			path = "ITunes API Responses";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR69N9AMGU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Tunely/Info.plist;
+				INFOPLIST_FILE = Tunely/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -405,7 +413,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR69N9AMGU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Tunely/Info.plist;
+				INFOPLIST_FILE = Tunely/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
