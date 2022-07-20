@@ -131,7 +131,7 @@
 		65D70BF32880891C0085EAE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				65E878E1288693EC00BFCE54 /* ITunes API Responses */,
+				65E878E1288693EC00BFCE54 /* ITunes_API_Responses */,
 				65D70BF6288089440085EAE9 /* Main.storyboard */,
 				65D70BD5288088CA0085EAE9 /* LaunchScreen.storyboard */,
 				65D70BD8288088CA0085EAE9 /* Info.plist */,
@@ -140,7 +140,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		65E878E1288693EC00BFCE54 /* ITunes API Responses */ = {
+		65E878E1288693EC00BFCE54 /* ITunes_API_Responses */ = {
 			isa = PBXGroup;
 			children = (
 				65D70BF4288089260085EAE9 /* jack_johnson_200.json */,
@@ -151,7 +151,7 @@
 				659767D32883EFD200CD8285 /* joji_100.json */,
 				65E878E22887E5D500BFCE54 /* joji_200.json */,
 			);
-			path = "ITunes API Responses";
+			path = ITunes_API_Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
