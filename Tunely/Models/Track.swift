@@ -21,13 +21,13 @@ struct Track: Decodable {
     var trackName: String
     var previewUrl: String
     var artworkUrl100: String
-    var collectionId: UInt
-    var collectionName: String
     var releaseDate: String
     var trackTimeMillis: UInt
-    var trackCount: UInt
-    var trackNumber: UInt
     var primaryGenreName: String
+    var collectionId: UInt?
+    var collectionName: String?
+    var trackCount: UInt?
+    var trackNumber: UInt?
     
     func formattedReleaseDate() -> String {
         /// Convert String to Date
@@ -57,9 +57,11 @@ struct Track: Decodable {
         var seenAlbums = Set<UInt>()
         var tracksWithUnqiueAlbums = [Track]()
         for track in tracks {
-            if !seenAlbums.contains(track.collectionId) {
-                tracksWithUnqiueAlbums.append(track)
-                seenAlbums.insert(track.collectionId)
+            if let collectionId = track.collectionId {
+                if !seenAlbums.contains(collectionId) {
+                    tracksWithUnqiueAlbums.append(track)
+                    seenAlbums.insert(collectionId)
+                }
             }
         }
         return tracksWithUnqiueAlbums
@@ -72,4 +74,3 @@ struct MusicResults: Decodable {
     /// NOTE: `codingKey` is not needed. If we want to rename the keys given by the json, then we will need it.
     /// see here: https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types
 }
-

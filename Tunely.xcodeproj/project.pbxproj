@@ -28,6 +28,7 @@
 		65D70BF5288089260085EAE9 /* jack_johnson_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 65D70BF4288089260085EAE9 /* jack_johnson_200.json */; };
 		65D70BF7288089440085EAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D70BF6288089440085EAE9 /* Main.storyboard */; };
 		65D70BFA28808A1A0085EAE9 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 65D70BF928808A1A0085EAE9 /* Nuke */; };
+		65E878E32887E5D500BFCE54 /* joji_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 65E878E22887E5D500BFCE54 /* joji_200.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		65D70BE92880890E0085EAE9 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		65D70BF4288089260085EAE9 /* jack_johnson_200.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jack_johnson_200.json; sourceTree = "<group>"; };
 		65D70BF6288089440085EAE9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		65E878E22887E5D500BFCE54 /* joji_200.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = joji_200.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				659767D22883EFD200CD8285 /* bts_100.json */,
 				659767D02883EFD200CD8285 /* childish_gambino_50.json */,
 				659767D32883EFD200CD8285 /* joji_100.json */,
+				65E878E22887E5D500BFCE54 /* joji_200.json */,
 			);
 			path = "ITunes API Responses";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				65D70BD7288088CA0085EAE9 /* LaunchScreen.storyboard in Resources */,
 				65D70BF7288089440085EAE9 /* Main.storyboard in Resources */,
+				65E878E32887E5D500BFCE54 /* joji_200.json in Resources */,
 				659767D72883EFD200CD8285 /* joji_100.json in Resources */,
 				65D70BF5288089260085EAE9 /* jack_johnson_200.json in Resources */,
 				65D70BD4288088CA0085EAE9 /* Assets.xcassets in Resources */,
